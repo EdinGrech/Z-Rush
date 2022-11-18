@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2866e8c936704b48b770a9bc9899195, type: 3}
+  m_Name: wave 0
+  m_EditorClassIdentifier: 
+  obstPrefab: {fileID: 2817359730670444709, guid: a5b23d190d028b0438759a21f69faa13, type: 3}
+  pathPrefab: {fileID: 3485808937176814871, guid: 5ff94612ba84cee46b5bfd6e1b8eb5ba, type: 3}
+  obstDmg: 1
+  obstSpeed: 2
+  obstCount: 4
+  timeBetweenSpawn: 3

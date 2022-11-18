@@ -9,7 +9,7 @@ public class player : MonoBehaviour
     float xMin, xMax;
     void Start()
     {
-        boundsSettup();
+        ViewPortToWorldPoint();
     }
     void Update()
     {
@@ -35,7 +35,7 @@ public class player : MonoBehaviour
         transform.position = new Vector2(newXPos, -4);
     }
 
-    void boundsSettup()
+    void ViewPortToWorldPoint()
     {
         Camera cam = Camera.main;
         xMin = cam.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
