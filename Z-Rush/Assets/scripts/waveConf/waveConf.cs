@@ -30,7 +30,7 @@ public class waveConf : ScriptableObject
     {
         return obstDmg;
     }
-    [SerializeField] float obstSpeed = 10f;
+    [SerializeField] float obstSpeed = 6f;
     public float readObstSpeed()
     {
         return obstSpeed;
@@ -44,5 +44,10 @@ public class waveConf : ScriptableObject
     public float returnTimeBetweenSpawn()
     {
         return timeBetweenSpawn;
+    }
+    [SerializeField] float ballSpeed = 3f;
+    public float readBallSpeed()
+    {
+        return ballSpeed;
     }
 }

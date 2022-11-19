@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29230c4d0e746743b139a7b7e665014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballSpawner: {fileID: 8481374335121464611, guid: c5a135e9ba607374ca9becd4da3dd94b, type: 3}
   waveConfigList:
   - {fileID: 11400000, guid: fe5f721e228f368499e56264ea3d94e3, type: 2}
+  - {fileID: 11400000, guid: d2a8f482f10b3004b9b90bf81f718c75, type: 2}
   looping: 0

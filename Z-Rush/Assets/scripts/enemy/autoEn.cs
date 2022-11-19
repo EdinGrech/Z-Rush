@@ -17,7 +17,7 @@ public class autoEn : MonoBehaviour
     List<Transform> loadPoints()
     {
         List<Transform> path = new List<Transform>();
-        foreach (Transform child in GameObject.Find(waveConfig.readPath().name).transform)
+        foreach (Transform child in GameObject.Find(waveConfig.readPath().transform.GetChild(Random.Range(0,2)).name).transform)
         {
             path.Add(child);
         }
