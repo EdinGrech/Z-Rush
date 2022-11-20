@@ -15,7 +15,7 @@ MonoBehaviour:
   obstPrefab: {fileID: 4223552943816398519, guid: ba92a229517d5844eb875373ce740009, type: 3}
   pathPrefab: {fileID: 7510374093791471663, guid: 041379c09bea20444ac2660d55b5b7a9, type: 3}
   obstDmg: 4
-  obstSpeed: 10
-  obstCount: 10
-  timeBetweenSpawn: 0.5
-  ballSpeed: 5
+  obstSpeed: 100
+  obstCount: 1000
+  timeBetweenSpawn: 0.01
+  ballSpeed: 1

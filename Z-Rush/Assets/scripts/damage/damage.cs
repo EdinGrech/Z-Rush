@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class damage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    waveConf waveConfig;
+    short fixedDamageOverwrite;
+
+    public void setWaveConfig(waveConf waveConfig)
     {
-        
+        this.waveConfig = waveConfig;
     }
 
-    // Update is called once per frame
-    void Update()
+    public float returnDMG()
     {
-        
+        if(!waveConfig)
+        {
+            return fixedDamageOverwrite;
+        }
+        return waveConfig.readObstDmg();
+    }
+
+    public void setFixedDamageOverwrite(short fixedDamageOverwrite)
+    {
+        this.fixedDamageOverwrite = fixedDamageOverwrite;
+    }
+    
+    public short retureFixedDamageOverwrite()
+    {
+        return fixedDamageOverwrite;
+    }
+
+    public void onHit()
+    {
+        Destroy(gameObject);
     }
 }

@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 8524368273749400587}
   - component: {fileID: 423377459634620534}
   - component: {fileID: 2929564080760403365}
-  - component: {fileID: -166081810531317434}
+  - component: {fileID: -299890231084095770}
+  - component: {fileID: -2523251868106674150}
+  - component: {fileID: -6122473553626481844}
   m_Layer: 0
   m_Name: 23_cheesecake_dish
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7714857434841697352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.137, y: -0.427, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -121,7 +123,7 @@ PolygonCollider2D:
       - {x: 0.16, y: 0.11}
       - {x: 0.08, y: 0.16}
   m_UseDelaunayMesh: 0
---- !u!114 &-166081810531317434
+--- !u!114 &-299890231084095770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +132,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 7714857434841697352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10e508f80d47e448b348e45d92aa378, type: 3}
+  m_Script: {fileID: 11500000, guid: c5910d9976686264cae95dd2f86aaff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 0}
+--- !u!50 &-2523251868106674150
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7714857434841697352}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-6122473553626481844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7714857434841697352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325d95e54a7721544806a7c31cc33982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

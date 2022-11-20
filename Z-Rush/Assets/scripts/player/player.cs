@@ -6,11 +6,22 @@ public class player : MonoBehaviour
 {
     [SerializeField] float padding = 4f;
     [SerializeField] float speed = 100f;
+    [SerializeField] float hp = 40f;
+
+    [SerializeField] AudioClip playerPoint;
+    [SerializeField][Range(0, 1)] float playerPointVolume = 0.75f;
+    [SerializeField] AudioClip playerHit;
+    [SerializeField][Range(0, 1)] float playerHitVolume = 0.75f;
+    [SerializeField] AudioClip playerDeath;
+    [SerializeField][Range(0, 1)] float playerDeathVolume = 0.75f;
+    
+    int score = 0;
     float xMin, xMax;
     void Start()
     {
         ViewPortToWorldPoint();
     }
+    
     void Update()
     {
         
@@ -40,5 +51,30 @@ public class player : MonoBehaviour
         Camera cam = Camera.main;
         xMin = cam.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
         xMax = cam.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
-    }  
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        damage localDmg = collision.gameObject.GetComponent<damage>();
+        if (localDmg) 
+        {
+            hp -= localDmg.returnDMG();
+            AudioSource.PlayClipAtPoint(playerHit, Camera.main.transform.position, playerHitVolume);
+        }
+        add2Scor localScor = collision.gameObject.GetComponent<add2Scor>();
+        if (localScor)
+        {
+            score += (int)localScor.returnScor();
+            AudioSource.PlayClipAtPoint(playerPoint, Camera.main.transform.position, playerPointVolume);
+        } 
+        Destroy(collision.gameObject);
+        print(hp);
+        print(score);
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(playerDeath, Camera.main.transform.position, playerDeathVolume);
+            //Destroy(effect, 1.2f);
+        }
+    }
 }

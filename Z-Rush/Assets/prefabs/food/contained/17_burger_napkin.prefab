@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 8684261692354662110}
   - component: {fileID: 921949728246794528}
   - component: {fileID: -1911111052786100545}
-  - component: {fileID: 256516149033779103}
+  - component: {fileID: 2992636314887140228}
+  - component: {fileID: -2728230433468076195}
+  - component: {fileID: 9167696440462479608}
   m_Layer: 0
   m_Name: 17_burger_napkin
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1008685448696788129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.327, y: -0.443, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,7 +122,7 @@ PolygonCollider2D:
       - {x: 0.16, y: 0.089999996}
       - {x: 0.08, y: 0.16}
   m_UseDelaunayMesh: 0
---- !u!114 &256516149033779103
+--- !u!114 &2992636314887140228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +131,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1008685448696788129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10e508f80d47e448b348e45d92aa378, type: 3}
+  m_Script: {fileID: 11500000, guid: c5910d9976686264cae95dd2f86aaff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 0}
+--- !u!50 &-2728230433468076195
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008685448696788129}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &9167696440462479608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008685448696788129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325d95e54a7721544806a7c31cc33982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

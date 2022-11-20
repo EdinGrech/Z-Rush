@@ -100,6 +100,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   padding: 0.6
   speed: 15
+  hp: 40
+  playerPoint: {fileID: 8300000, guid: 5b009d30c30fd6847af39a3431670939, type: 3}
+  playerPointVolume: 0.75
+  playerHit: {fileID: 8300000, guid: 314f21a114b25b84bb865c8aec52d892, type: 3}
+  playerHitVolume: 0.673
+  playerDeath: {fileID: 8300000, guid: bd0adab7f458b4c468e477fcc0a168c2, type: 3}
+  playerDeathVolume: 1
 --- !u!60 &-330952957869414371
 PolygonCollider2D:
   m_ObjectHideFlags: 0

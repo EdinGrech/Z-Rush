@@ -43,6 +43,7 @@ public class spawner : MonoBehaviour
         {
             GameObject foodObst = Instantiate(waveConfig.readObstPrefab(), path[0].transform.position, Quaternion.identity);
             foodObst.GetComponent<autoEn>().setWaveConfig(waveConfig);
+            foodObst.GetComponent<damage>().setWaveConfig(waveConfig);
             yield return new WaitForSeconds(waveConfig.returnTimeBetweenSpawn() + (eCount / waveConfig.readObstCount()));//needs tweekin
         }
         yield return new WaitForSeconds(waveConfig.returnTimeBetweenSpawn() * waveConfig.readObstCount());

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1210244013940716336}
   - component: {fileID: -2096186079865847826}
   - component: {fileID: 4427560380402926395}
+  - component: {fileID: -1620328155731568958}
+  - component: {fileID: -4439920881946406925}
   m_Layer: 0
   m_Name: 05_apple_pie
   m_TagString: Untagged
@@ -133,3 +135,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfig: {fileID: 0}
+--- !u!114 &-1620328155731568958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817359730670444709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5910d9976686264cae95dd2f86aaff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &-4439920881946406925
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817359730670444709}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

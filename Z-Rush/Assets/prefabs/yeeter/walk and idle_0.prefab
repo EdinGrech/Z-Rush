@@ -10,6 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7413340288572374472}
   - component: {fileID: 8299246920140127113}
+  - component: {fileID: 5277954167011699259}
+  - component: {fileID: 2410450662129731998}
+  - component: {fileID: 4745212956805568603}
+  - component: {fileID: -6417568482612144342}
+  - component: {fileID: 862159275533123713}
   m_Layer: 0
   m_Name: walk and idle_0
   m_TagString: Untagged
@@ -26,11 +31,11 @@ Transform:
   m_GameObject: {fileID: 1980874061118606691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.9, y: -1.11, z: 0}
-  m_LocalScale: {x: 4.4944825, y: 4.4944825, z: 4.4944825}
+  m_LocalScale: {x: 5.955613, y: 5.955613, z: 5.955613}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8299246920140127113
 SpriteRenderer:
@@ -84,3 +89,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &5277954167011699259
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980874061118606691}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.24, y: 0.24}
+    newSize: {x: 0.24, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.050871834, y: 0.08110133}
+      - {x: -0.019319326, y: 0.08305527}
+      - {x: -0.053080864, y: 0.053016905}
+      - {x: -0.051514834, y: -0.020859733}
+      - {x: -0.040569767, y: -0.057227552}
+      - {x: -0.039959475, y: -0.09292486}
+      - {x: -0.020706244, y: -0.09920419}
+      - {x: -0.009153036, y: -0.11306805}
+      - {x: 0.05064569, y: -0.11264136}
+      - {x: 0.049191408, y: -0.09227227}
+      - {x: 0.07382549, y: -0.08306806}
+      - {x: 0.07150204, y: -0.056136135}
+      - {x: 0.08136431, y: -0.008861817}
+      - {x: 0.082285054, y: 0.05073185}
+  m_UseDelaunayMesh: 0
+--- !u!114 &2410450662129731998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980874061118606691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5910d9976686264cae95dd2f86aaff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &4745212956805568603
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980874061118606691}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-6417568482612144342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980874061118606691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10e508f80d47e448b348e45d92aa378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &862159275533123713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980874061118606691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a137d644d23d7324aa929738cf1baa95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  foodProjectile: {fileID: 6892906183570201881, guid: 90d4932e2e615fe4db3cf6025cb69f59, type: 3}

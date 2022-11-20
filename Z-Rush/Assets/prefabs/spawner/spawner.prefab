@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-6620759818057064964
 MonoBehaviour:
@@ -48,4 +48,5 @@ MonoBehaviour:
   waveConfigList:
   - {fileID: 11400000, guid: fe5f721e228f368499e56264ea3d94e3, type: 2}
   - {fileID: 11400000, guid: d2a8f482f10b3004b9b90bf81f718c75, type: 2}
-  looping: 0
+  - {fileID: 11400000, guid: a70b6b17114863d4191290db7ef6f5d8, type: 2}
+  looping: 1

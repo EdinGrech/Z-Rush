@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2866e8c936704b48b770a9bc9899195, type: 3}
   m_Name: wave 2
   m_EditorClassIdentifier: 
-  obstPrefab: {fileID: 0}
-  pathPrefab: {fileID: 0}
+  obstPrefab: {fileID: 1980874061118606691, guid: a94e3b881d8e5854db8d296ff9d6bd3d, type: 3}
+  pathPrefab: {fileID: 7510374093791471663, guid: 041379c09bea20444ac2660d55b5b7a9, type: 3}
   obstDmg: 10
-  obstSpeed: 10
-  obstCount: 10
-  timeBetweenSpawn: 0.5
-  ballSpeed: 3
+  obstSpeed: 4
+  obstCount: 4
+  timeBetweenSpawn: 4
+  ballSpeed: 5

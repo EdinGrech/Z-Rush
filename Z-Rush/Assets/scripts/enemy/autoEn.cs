@@ -5,7 +5,7 @@ using UnityEngine;
 public class autoEn : MonoBehaviour
 {
     List<Transform> wayPoints;
-    [SerializeField] waveConf waveConfig;
+    waveConf waveConfig;
     short waypointIndex = 0;
 
     void Start()
@@ -54,4 +54,9 @@ public class autoEn : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Destroy(gameObject);
+    //}
 }
