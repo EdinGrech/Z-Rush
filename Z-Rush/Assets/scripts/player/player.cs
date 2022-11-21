@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -72,9 +73,18 @@ public class player : MonoBehaviour
         print(score);
         if (hp <= 0)
         {
+            StartCoroutine(WaitAndLoad());
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(playerDeath, Camera.main.transform.position, playerDeathVolume);
+           
             //Destroy(effect, 1.2f);
         }
+    }
+    
+    IEnumerator WaitAndLoad()
+    {
+        print("loading sceen");
+        yield return new WaitForSeconds(2); //not working
+        SceneManager.LoadScene("StartMenu"); //issue not finding sceen or smt
     }
 }
