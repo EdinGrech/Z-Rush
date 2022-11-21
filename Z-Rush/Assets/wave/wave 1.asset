@@ -18,4 +18,4 @@ MonoBehaviour:
   obstSpeed: 100
   obstCount: 1000
   timeBetweenSpawn: 0.01
-  ballSpeed: 1
+  ballSpeed: 3

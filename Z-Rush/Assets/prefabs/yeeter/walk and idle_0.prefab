@@ -123,8 +123,8 @@ PolygonCollider2D:
       - {x: -0.020706244, y: -0.09920419}
       - {x: -0.009153036, y: -0.11306805}
       - {x: 0.05064569, y: -0.11264136}
-      - {x: 0.049191408, y: -0.09227227}
-      - {x: 0.07382549, y: -0.08306806}
+      - {x: 0.05179693, y: -0.113116436}
+      - {x: 0.07252273, y: -0.093490124}
       - {x: 0.07150204, y: -0.056136135}
       - {x: 0.08136431, y: -0.008861817}
       - {x: 0.082285054, y: 0.05073185}
@@ -187,4 +187,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
-  foodProjectile: {fileID: 6892906183570201881, guid: 90d4932e2e615fe4db3cf6025cb69f59, type: 3}
+  foodProjectile:
+  - {fileID: 6892906183570201881, guid: 90d4932e2e615fe4db3cf6025cb69f59, type: 3}
+  - {fileID: 7714857434841697352, guid: b8de2b9eb2beb0f4eaf38141126206ae, type: 3}
+  - {fileID: 1008685448696788129, guid: 90d90e2cafbab2c4198da018379a813e, type: 3}
+  yeetSound: {fileID: 8300000, guid: e32ec7bde4d6b9547aa7077a5bf62ca6, type: 3}
+  yeetSoundVolume: 0.75

@@ -41,13 +41,4 @@ public class ballSpawner : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    //List<Transform> loadPonts()
-    //{
-    //    List<Transform> path = new List<Transform>();
-    //    foreach (Transform child in slidingPath.transform)
-    //    {
-    //        path.Add(child);
-    //    }
-    //    return path;
-    //}
 }
