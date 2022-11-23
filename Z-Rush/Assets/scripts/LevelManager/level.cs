@@ -1,12 +1,13 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level : MonoBehaviour
+public class level : MonoBehaviour
 {
 
-    [SerializeField] float delayInSeconds = 1f;
-    
+    [SerializeField] float delayInSeconds = 3f;
+
     IEnumerator WaitAndLoad()
     {
         yield return new WaitForSeconds(delayInSeconds);

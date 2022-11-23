@@ -73,18 +73,11 @@ public class player : MonoBehaviour
         print(score);
         if (hp <= 0)
         {
-            StartCoroutine(WaitAndLoad());
+            FindObjectOfType<Level>().LoadGameOver();
             Destroy(gameObject);
-            AudioSource.PlayClipAtPoint(playerDeath, Camera.main.transform.position, playerDeathVolume);
-           
+            AudioSource.PlayClipAtPoint(playerDeath, Camera.main.transform.position, playerDeathVolume);    
             //Destroy(effect, 1.2f);
         }
     }
-    
-    IEnumerator WaitAndLoad()
-    {
-        print("loading sceen");
-        yield return new WaitForSeconds(2); //not working
-        SceneManager.LoadScene("StartMenu"); //issue not finding sceen or smt
-    }
+   
 }
