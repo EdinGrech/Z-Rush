@@ -15,6 +15,7 @@ public class player : MonoBehaviour
     [SerializeField][Range(0, 1)] float playerHitVolume = 0.75f;
     [SerializeField] AudioClip playerDeath;
     [SerializeField][Range(0, 1)] float playerDeathVolume = 0.75f;
+
     
     int score = 0;
     float xMin, xMax;
@@ -22,10 +23,10 @@ public class player : MonoBehaviour
     {
         ViewPortToWorldPoint();
     }
-    
-    void Update()
+
+    public int returnHP()
     {
-        
+        return (int)hp;
     }
 
     void FixedUpdate()
@@ -67,6 +68,8 @@ public class player : MonoBehaviour
         {
             score += (int)localScor.returnScor();
             AudioSource.PlayClipAtPoint(playerPoint, Camera.main.transform.position, playerPointVolume);
+            gameSetion gameSetion = FindObjectOfType<gameSetion>();
+            gameSetion.setScore(score);
         } 
         Destroy(collision.gameObject);
         print(hp);

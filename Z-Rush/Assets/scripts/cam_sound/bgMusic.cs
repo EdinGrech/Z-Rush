@@ -20,7 +20,28 @@ public class bgMusic : MonoBehaviour
     IEnumerator playMusic()
     {
         AudioSource.PlayClipAtPoint(Music, Camera.main.transform.position, MusicVolume);
+
+        DontDestroyOnLoad(GameObject.Find("One shot audio"));
         yield return new WaitForSeconds(Music.length - 0.22f);
+        //yield return new WaitForSeconds(0.2f);
+    }
+
+    void SetupSingolton()
+    {
+        if (FindObjectsOfType<bgMusic>().Length > 1)
+        {
+            print("destroy");
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    private void Awake()
+    {
+        SetupSingolton();
     }
 
 }
