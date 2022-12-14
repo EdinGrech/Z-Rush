@@ -15,8 +15,9 @@ public class player : MonoBehaviour
     [SerializeField][Range(0, 1)] float playerHitVolume = 0.75f;
     [SerializeField] AudioClip playerDeath;
     [SerializeField][Range(0, 1)] float playerDeathVolume = 0.75f;
+    //get effect
+    [SerializeField] GameObject effect;
 
-    
     int score = 0;
     float xMin, xMax;
     void Start()
@@ -76,10 +77,12 @@ public class player : MonoBehaviour
         print(score);
         if (hp <= 0)
         {
+            //play effect
+            GameObject effectIns = Instantiate(effect, transform.position, Quaternion.identity);
+            Destroy(effectIns, 1.1f);
             FindObjectOfType<Level>().LoadGameOver();
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(playerDeath, Camera.main.transform.position, playerDeathVolume);    
-            //Destroy(effect, 1.2f);
         }
     }
    

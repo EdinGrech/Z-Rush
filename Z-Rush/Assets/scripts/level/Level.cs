@@ -29,6 +29,11 @@ public class Level : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void QuitGame()
     {
         print("Quitting");

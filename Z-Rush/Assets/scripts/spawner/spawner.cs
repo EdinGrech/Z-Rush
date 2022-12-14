@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 //using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class spawner : MonoBehaviour
@@ -12,9 +13,21 @@ public class spawner : MonoBehaviour
 
     IEnumerator Start()
     {
+        //4 debug
         do
         {
             yield return StartCoroutine(RunThroughWaves());
+            //load changeLev scene
+            //get current scene
+            Scene currentScene = SceneManager.GetActiveScene();
+            if(SceneManager.GetActiveScene().name == SceneManager.GetSceneByBuildIndex(4).name)
+            {
+                SceneManager.LoadScene(5);
+            }
+            else
+            {    
+                SceneManager.LoadScene(4);
+            }
         }
         while (looping == true);
     }
