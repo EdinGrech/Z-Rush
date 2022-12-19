@@ -22,19 +22,20 @@ public class gameSetion : MonoBehaviour
         }
     }
 
-    int score = 0;
-    public int returnScore()
+    static int score = 0;
+    static public int returnScore()
     {
         return score;
     }
 
-    public void setScore(int scoreValue)
+    static public void setScore(int scoreValue)
     {
         score = scoreValue;
     }
 
     public void resetScore()
     {
-        DestroyObject(gameObject);
+        score = 0;
+        Destroy(gameObject);
     }
 }

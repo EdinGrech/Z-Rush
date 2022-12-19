@@ -15,8 +15,9 @@ public class Level : MonoBehaviour
 
     public void LoadGame()
     {
+        gameSetion gameSetion = FindObjectOfType<gameSetion>();
+        gameSetion.resetScore();
         SceneManager.LoadScene("Level");
-
     }
 
     public void LoadGameOver()
@@ -26,6 +27,8 @@ public class Level : MonoBehaviour
 
     public void LoadStartMenu()
     {
+        gameSetion gameSetion = FindObjectOfType<gameSetion>();
+        gameSetion.resetScore();
         SceneManager.LoadScene(0);
     }
 

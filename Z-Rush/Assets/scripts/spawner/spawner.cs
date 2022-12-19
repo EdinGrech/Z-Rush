@@ -19,8 +19,7 @@ public class spawner : MonoBehaviour
             yield return StartCoroutine(RunThroughWaves());
             //load changeLev scene
             //get current scene
-            Scene currentScene = SceneManager.GetActiveScene();
-            if(SceneManager.GetActiveScene().name == SceneManager.GetSceneByBuildIndex(4).name)
+            if(SceneManager.GetActiveScene().name == SceneManager.GetSceneByBuildIndex(3).name)
             {
                 SceneManager.LoadScene(5);
             }

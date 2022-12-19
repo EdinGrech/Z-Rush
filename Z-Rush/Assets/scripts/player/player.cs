@@ -18,7 +18,8 @@ public class player : MonoBehaviour
     //get effect
     [SerializeField] GameObject effect;
 
-    int score = 0;
+    
+    int score = gameSetion.returnScore();
     float xMin, xMax;
     void Start()
     {
@@ -69,7 +70,6 @@ public class player : MonoBehaviour
         {
             score += (int)localScor.returnScor();
             AudioSource.PlayClipAtPoint(playerPoint, Camera.main.transform.position, playerPointVolume);
-            gameSetion gameSetion = FindObjectOfType<gameSetion>();
             gameSetion.setScore(score);
         } 
         Destroy(collision.gameObject);
